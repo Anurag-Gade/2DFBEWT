@@ -1,6 +1,7 @@
 import numpy as np
 import math
 import os
+from EWT_beta import *
 
 def EWT2D_LP_Scaling(w1, gamma, W, H):
   
