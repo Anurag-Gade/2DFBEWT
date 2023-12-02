@@ -3,6 +3,7 @@
 import numpy as np
 import math
 import os
+from EWT_beta import *
 
 def EWT2D_LP_Wavelet(wn, wm, gamma, W, H):
 
