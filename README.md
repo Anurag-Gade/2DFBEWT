@@ -1,4 +1,4 @@
-# Wavelet-Transform-Toolbox
+# 2D Empirical Wavelet-Transform-Toolbox
 
 Python toolbox for performing 2-dimensional Empirical Wavelet Transform (2D-EWT). 
 
