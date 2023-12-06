@@ -55,6 +55,12 @@ for m in range(len(mfb)):
     # plt.subplot(2, 4, m+1)
     xx = ewtLP[m]
     # plt.imshow(xx)
+    save_path = os.path.join(out_folder, "mode_{q}.png".format(q = m+1))
+    cv2.imwrite(save_path, xx)
+
+    print("Mode {num} saved!".format(num = m+1))
+
+
 
 
 
