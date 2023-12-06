@@ -1,9 +1,9 @@
-# 2D Empirical Wavelet-Transform-Toolbox
+# 2D Empirical Wavelet Transform
 
-Python toolbox for performing 2-dimensional Empirical Wavelet Transform (2D-EWT). 
+Python implementation of the two-dimesnional Empirical Wavelet Transform with fixed-boundary points (FBPs).
 
-If you want to use this code, you need to cite these four papers:
-
+## Citation
+If this repository is useful to your research, please cite as below:
 
 1. Gade, A., Dash, D. K., Kumari, T. M., Ghosh, S. K., Tripathy, R. K., & Pachori, R. B. (2023). Multiscale Analysis Domain Interpretable Deep Neural Network for Detection of Breast Cancer Using Thermogram Images. IEEE Transactions on Instrumentation and Measurement.
 
