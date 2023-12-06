@@ -1,6 +1,8 @@
 # 2D Empirical Wavelet Transform
 
-Python implementation of the two-dimesnional Empirical Wavelet Transform with fixed-boundary points (FBPs).
+**Code for the two-dimesnional Empirical Wavelet Transform with fixed-boundary points (FBPs).**
+
+There are various approaches to multiscale analysis, empirical wavelet transform being one. For multiscale analysis of signals, 1-dimension empirical wavelet transform (1DEWT) was introduced and for the analysis of images its two-dimensional counterpart was introduced. However in [1] and [2], two-dimensional empirical wavelet transform was used with **fixed boundary points (FBPs)**.
 
 ## Citation
 If this repository is useful to your research, please cite as below:
