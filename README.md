@@ -1,4 +1,4 @@
-# 2D Empirical Wavelet Transform
+# 2D fixed-boundary based Empirical Wavelet Transform
 
 **Code for the two-dimesnional Empirical Wavelet Transform with fixed-boundary points (FBPs).**
 
