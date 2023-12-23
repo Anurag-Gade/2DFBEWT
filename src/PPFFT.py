@@ -31,7 +31,7 @@ def ppfft(X,S1=1,S2=1):
 
     for i in range(-N*S1, N*S1):
       
-        Y[i+N*S1, S2*N-1::-1] = np.transpose(FRFT_Centered(f_tilde[i+N*S1+1, :], i/(N**2*S1*S2)))
+        Y[i+N*S1, S2*N-1::-1] = np.transpose(FRFT_Centered(f_tilde[i+N*S1, :], i/(N**2*S1*S2)))
 
     '''
     Constructing quadrant 2 and 4
