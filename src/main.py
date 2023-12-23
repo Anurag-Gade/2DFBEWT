@@ -43,7 +43,7 @@ W = f.shape[1]
 H = f.shape[0]
 
 # Build the 2D filter bank
-mfb = EWT2D_LP_FilterBank(points, W, H)
+mfb = EWT2D_LP_FilterBank(points, H, W)
 
 # We filter the signal to extract each subband
 ff = np.fft.fft2(f)
