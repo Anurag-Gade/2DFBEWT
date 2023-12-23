@@ -34,7 +34,7 @@ points = [int(x) for x in points]
 f = cv2.imread(input_path)
 f = cv2.cvtColor(f, cv2.COLOR_BGR2GRAY)
 
-pseudoFFT = PPFFT(f)
+pseudoFFT = ppfft(f)
 meanppfft = np.fft.fftshift(np.sum(np.abs(pseudoFFT), axis=1))
 num = points * np.pi
 points = num / np.round(len(meanppfft) / 2)
