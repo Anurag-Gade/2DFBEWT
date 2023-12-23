@@ -8,7 +8,10 @@ There are various approaches to multiscale analysis, empirical wavelet transform
 
 The script to run is `main.py` which is included in the `src` folder. To run `main.py`, there are 4 arguments which are required;
 
-- ***input_path***: Provide the absolute path to your input image. 
+- ***input_path***: Provide the absolute path to your input image.
+- ***out_folder***: Provide the output folder path where the EWT modes will be saved.
+- ***num_points***: Provide the number of boundary points.
+- ***points***: Provide the frequency points $f_p$ in the form of a list i.e, [4,8,12,16,20]. 
 
 ## Citation
 If this repository is useful to your research, please cite as below:
