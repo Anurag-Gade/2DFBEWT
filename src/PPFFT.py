@@ -17,7 +17,7 @@ def ppfft(X,S1=1,S2=1):
     N = math.ceil(max(input_shape[0], input_shape[1])/2)*2
     Xnew = np.zeros((N,N))
 
-    Xnew[int(N//2 - np.floor(N1/2) + 1) : int(N//2 - np.floor(N1/2) + N1), int(N//2 - np.floor(N2/2) + 1) : int(N//2 - np.floor(N2/2) + N2)] = X
+    Xnew[int(N//2 - np.floor(N1/2)) : int(N//2 - np.floor(N1/2) + N1), int(N//2 - np.floor(N2/2)) : int(N//2 - np.floor(N2/2) + N2)] = X
     X = Xnew
     Y = np.zeros((2*S1*N, 2*S2*N))
 
