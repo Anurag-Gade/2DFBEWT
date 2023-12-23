@@ -11,8 +11,8 @@ def ppfft(X,S1=1,S2=1):
     '''
   
     input_shape = X.shape
-    N1 = input_shape.shape[0]
-    N2 = input_shape.shape[1]
+    N1 = input_shape[0]
+    N2 = input_shape[1]
 
     N = math.ceil(max(input_shape[0], input_shape[1])/2)*2
     Xnew = np.zeros((N,N))
