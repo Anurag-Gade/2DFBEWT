@@ -48,7 +48,7 @@ mfb = EWT2D_LP_FilterBank(points, H, W)
 # We filter the signal to extract each subband
 ff = np.fft.fft2(f)
 ewtLP = [None] * len(mfb)
-for k in range(len(mfb)):
+for k in range(len(mfb)-1):
     ewtLP[k] = np.real(np.fft.ifft2(np.conj(mfb[k]) * ff))
 
 plt.figure()
