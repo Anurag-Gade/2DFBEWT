@@ -18,7 +18,7 @@ def EWT2D_LP_FilterBank(boundaries, W, H):
         if r < gamma:
             gamma = r
           
-    r = (pi - boundaries[Npic]) / (pi + boundaries[Npic])
+    r = (math.pi - boundaries[Npic]) / (math.pi + boundaries[Npic])
     if r < gamma:
         gamma = r
       
