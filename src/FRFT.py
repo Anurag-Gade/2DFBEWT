@@ -16,7 +16,7 @@ def FRFT(X, alpha):
     XX = np.fft.fft(X_tilde)
     YY = np.fft.fft(np.conj(factor))
     y = np.fft.ifft(XX * YY)
-    y = y * Factor
+    y = y * factor
     y = y[:N]
 
     return y
