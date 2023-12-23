@@ -33,7 +33,7 @@ def EWT2D_LP_FilterBank(boundaries, W, H):
     for k in range(Npic-1):
         mfb[k+1] = EWT2D_LP_Wavelet(boundaries[k], boundaries[k+1], gamma, W, H)
       
-    mfb[Npic] = EWT2D_UP_LP_Wavelet(boundaries[Npic], gamma, W, H)
+    mfb[Npic-1] = EWT2D_UP_LP_Wavelet(boundaries[Npic-1], gamma, W, H)
   
     return mfb
 
