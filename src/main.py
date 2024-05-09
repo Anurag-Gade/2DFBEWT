@@ -31,6 +31,8 @@ points = args.points
 points = ast.literal_eval(points)
 points = [int(x) for x in points]
 
+points = np.asarray(points)
+
 f = cv2.imread(input_path)
 f = cv2.cvtColor(f, cv2.COLOR_BGR2GRAY)
 
@@ -49,7 +51,7 @@ mfb = EWT2D_LP_FilterBank(points, H, W)
 ff = np.fft.fft2(f)
 ewtLP = [None] * len(mfb)
 for k in range(len(mfb)-1):
-    ewtLP[k] = np.real(np.fft.ifft2(np.conj(mfb[k]) * ff))
+    ewtLP[k] = np.real(np.fft.ifft2(np.conj(mfb[k]) * ff.T))
 
 plt.figure()
 for m in range(len(mfb)):
