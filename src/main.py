@@ -54,7 +54,7 @@ for k in range(len(mfb)-1):
     ewtLP[k] = np.real(np.fft.ifft2(np.conj(mfb[k]) * ff.T))
 
 plt.figure()
-for m in range(len(mfb)):
+for m in range(len(mfb)-1):
     # plt.subplot(2, 4, m+1)
     xx = ewtLP[m]
     # plt.imshow(xx)
